@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace GimmePizza
 {
+    /***************************************************************/
+    /* Class that represents an order a person places for delivery */
+    /***************************************************************/
     class Order
     {
         public List<FoodItem> item_list;

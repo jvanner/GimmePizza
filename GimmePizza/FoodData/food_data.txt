@@ -1,0 +1,5 @@
+Small Cheese Pizza,C:\Users\Joshua\Documents\GitHub\GimmePizza\GimmePizza\FoodData\cheese_pizza.png,10.99
+Medium Cheese Pizza,C:\Users\Joshua\Documents\GitHub\GimmePizza\GimmePizza\FoodData\cheese_pizza.png,12.99
+Large Cheese Pizza,C:\Users\Joshua\Documents\GitHub\GimmePizza\GimmePizza\FoodData\cheese_pizza.png,14.99
+Breadsticks,C:\Users\Joshua\Documents\GitHub\GimmePizza\GimmePizza\FoodData\breadsticks.png,8.99
+2L Coke,null,3.99
