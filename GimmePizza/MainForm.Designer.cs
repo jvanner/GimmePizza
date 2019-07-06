@@ -28,12 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.listBoxFoodItems = new System.Windows.Forms.ListBox();
+            this.SuspendLayout();
+            // 
+            // listBoxFoodItems
+            // 
+            this.listBoxFoodItems.FormattingEnabled = true;
+            this.listBoxFoodItems.Location = new System.Drawing.Point(12, 12);
+            this.listBoxFoodItems.Name = "listBoxFoodItems";
+            this.listBoxFoodItems.Size = new System.Drawing.Size(120, 95);
+            this.listBoxFoodItems.TabIndex = 0;
+            this.listBoxFoodItems.SelectedIndexChanged += new System.EventHandler(this.listBoxFoodItems_SelectedIndexChanged);
+            this.listBoxFoodItems.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listBoxFoodItems_MouseDoubleClick);
+            // 
+            // MainForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Controls.Add(this.listBoxFoodItems);
+            this.Name = "MainForm";
+            this.Text = "GimmePizza";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ListBox listBoxFoodItems;
     }
 }

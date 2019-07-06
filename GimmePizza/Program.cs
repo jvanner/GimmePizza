@@ -23,9 +23,9 @@ namespace GimmePizza
             FoodItem item2 = new FoodItem("Large Pizza", "Maybe", 12.95);
             order1.item_list.Add(item1);
             order1.item_list.Add(item2);
-
             order1.printOrder();
-            List<FoodItem> food_list = FoodItem.ReadFoodData("C:\\Users\\Joshua\\Documents\\GitHub\\GimmePizza\\GimmePizza\\FoodData\\food_data.txt");
+
+            List<FoodItem> food_list = FoodItem.ReadFoodData("..\\..\\FoodData\\food_data.txt");
             Order order2 = new Order();
             foreach(FoodItem food in food_list)
             {
@@ -33,7 +33,8 @@ namespace GimmePizza
             }
 
             order2.printOrder();
-            Console.ReadKey();
+
+            Application.Run(new MainForm());
         }
     }
 }
