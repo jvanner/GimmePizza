@@ -37,5 +37,9 @@ namespace GimmePizza
             System.Console.WriteLine("Total Price: $" + this.getPrice());
         }
         
+        public void clearOrder()
+        {
+            this.item_list.Clear();
+        }
     }
 }
