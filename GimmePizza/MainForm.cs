@@ -24,12 +24,15 @@ namespace GimmePizza
 
         private void listBoxFoodItems_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Console.WriteLine("You clicked " + sender);
+            Console.WriteLine("You clicked " + listBoxFoodItems.SelectedItem.ToString());
         }
 
         private void listBoxFoodItems_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            Console.WriteLine("HEHE WEE");
+            FoodItem item = new FoodItem(listBoxFoodItems.SelectedItem.ToString(), "test.png", 20);
+            Console.WriteLine(item.Name + " added to order");
         }
+
+
     }
 }
